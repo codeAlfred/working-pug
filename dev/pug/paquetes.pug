@@ -1,0 +1,23 @@
+extends ../templates/template.pug
+block append config
+    - pagina_actual="paquetes";
+    - page_title = "paquetes";
+
+block paquetes
+    .paquetes
+        -for(let i=0;i<4;i++)            
+            .paquete
+                ul.none
+                    li.paquetes__title.pack_name PACK 1
+                    li.pack_dest DESTINO
+                    li.pack_act lorem ipsum
+                    li.pack_act lorem ipsum
+                    li.pack_act lorem ipsum
+                    li.pack_act lorem ipsum
+                    li.pack_act lorem ipsum
+                    li.pack_price u$s 150
+                    li: a(href="#").pack_buy COMPRAR
+   
+    a(href="#").create_pack CREA TU PACKs
+
+    

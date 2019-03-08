@@ -1,0 +1,54 @@
+.nosotros {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  
+  &__item {
+    width: 25%;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    background: $c-principal;
+    padding: 1em;
+    margin-top: 1em;
+    img {
+      width: 150px;
+      margin: 0 auto;
+    }
+  }
+  &__title {
+    color: #FFF;
+    text-align: center;
+    margin: .5em 0;
+    font-size: 1.5em;
+  }
+  &__text {
+    color: #FFF;
+    margin-bottom: 1.5em;
+  }
+  &__button {
+    align-self: flex-end;
+    display: table;
+    background: #FFF;
+    color: #000;
+    text-align: center;
+    margin: auto auto 0;
+    text-decoration: none;
+    padding: .5em 1em;
+    font-size: 1rem;
+    transition: all .3s ease-out;
+    &:hover {
+      color: #FFF;
+      background: $c-principal;
+    }
+  }
+  @media screen and (max-width: 640px){
+    flex-direction: column;
+    align-items: center;
+    &__item {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.max {
+  width: 100%;
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  height: 100%;
+}
+@import "blocks/variables.scss";
+@import "blocks/header.scss";
+@import "blocks/banner.scss";
+@import "blocks/nosotros.scss";
+@import "blocks/destinos.scss";
+@import "blocks/opcion.scss";
+@import "blocks/packs.scss";
+@import "blocks/contacto.scss";
+@import "blocks/clientes.scss";
+@import "blocks/footer.scss";
+
+img[alt="www.000webhost.com"],
+img[src="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000webhost-white2.png"] {
+  display: none;
+  opacity: 0;
+}
+

@@ -1,0 +1,63 @@
+extends ../templates/template
+
+block append config
+    - pagina_actual="inicio"
+
+block nosotros
+    .nosotros
+        .nosotros__item
+            img(src="/res/trayectoria.svg" alt="trayectoria")
+            h1.nosotros__title TRAYECTORIA
+            p.nosotros__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus cumque nesciunt rem doloribus ex facere, sed ipsum, obcaecati sit. Neque culpa eveniet, minima maiores. Aspernatur sunt fugit rem, animi possimus.
+            a.nosotros__button(href="#") Más Info
+            
+        .nosotros__item
+            img(src="res/world.svg" alt="mundo")
+            h1.nosotros__title DESTINOS
+            p.nosotros__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus cumque nesciunt rem doloribus ex facere, sed ipsum, obcaecati sit. Neque culpa eveniet, minima maiores. Aspernatur sunt fugit rem, animi possimus.
+            a.nosotros__button(href="#") Elegir Destino
+            
+        .nosotros__item
+            img(src="res/packs.svg" alt="paquetes")
+            h1.nosotros__title PAQUETES
+            p.nosotros__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus cumque nesciunt rem doloribus ex facere, sed ipsum, obcaecati sit. Neque culpa eveniet, minima maiores. Aspernatur sunt fugit rem, animi possimus.
+            a.nosotros__button(href="#") Ver Paquetes
+            
+block destinos_elegidos
+    .destinos_elegidos
+        h1.destinos__title LOS DESTINOS MAS ELEGIDOS
+        .destinos__item
+            img.destinos__img(src="/res/destinos/destino1.jpg")
+            .destinos__item__description
+                h1.destinos__item__title LOREM IPSON DOLOR.
+                P.destinos__item_text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus cumque nesciunt rem doloribus ex facere, sed ipsum, obcaecati sit. Neque culpa eveniet, minima maiores. Aspernatur sunt fugit rem, animi possimus.
+                a.destinos__button(href="#") Comprar
+                
+        .destinos__item
+            img.destinos__img(src="/res/destinos/destino2.jpg")
+            .destinos__item__description
+                h1.destinos__item__title LOREM IPSON DOLOR.
+                P.destinos__item_text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus cumque nesciunt rem doloribus ex facere, sed ipsum, obcaecati sit. Neque culpa eveniet, minima maiores. Aspernatur sunt fugit rem, animi possimus.
+                a.destinos__button(href="#") Comprar
+                
+block clientes
+    .clientes
+        h1.clientes__title NUESTROS CLIENTES
+        .clientes__comentarios
+            - for( let i=0; i<3; i++)
+                .comentario
+                    .comentario__persona
+                        img.comentario__persona__imagen(src="/res/clientes/face.jpg" alt="persona")
+                        p.comentario__persona__nombre Luis Muñoz Rodas
+                    .comentario__contenido
+                        .stars
+                            - for(let i=0; i<4; i++)
+                                img(class="star" src="/res/star.svg" alt="estrella")
+                        p.text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus cumque nesciunt rem doloribus ex facere, sed ipsum,         
+                    
+        
+        
+        
+        
+        
+        

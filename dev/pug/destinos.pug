@@ -1,0 +1,42 @@
+extends ../templates/template.pug
+block append config
+    - pagina_actual ="destinos";
+    - page_title="destinos";
+
+block destinos_elegidos
+    .destinos_elegidos
+        h1.destinos__title DESTINOS DISPONIBLES
+        .destinos__item
+            img.destinos__img(src="/res/destinos/destino1.jpg")
+            .destinos__item__description
+                h1.destinos__item__title LOREM IPSON DOLOR.
+                P.destinos__item_text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus cumque nesciunt rem doloribus ex facere, sed ipsum, obcaecati sit. Neque culpa eveniet, minima maiores. Aspernatur sunt fugit rem, animi possimus.
+                a.destinos__button(href="#") Comprar
+                
+        .destinos__item
+            img.destinos__img(src="/res/destinos/destino2.jpg")
+            .destinos__item__description
+                h1.destinos__item__title LOREM IPSON DOLOR.
+                P.destinos__item_text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus cumque nesciunt rem doloribus ex facere, sed ipsum, obcaecati sit. Neque culpa eveniet, minima maiores. Aspernatur sunt fugit rem, animi possimus.
+                a.destinos__button(href="#") Comprar
+        
+        .destinos__item
+            img.destinos__img(src="/res/destinos/destino3.jpg")
+            .destinos__item__description
+                h1.destinos__item__title LOREM IPSON DOLOR.
+                P.destinos__item_text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus cumque nesciunt rem doloribus ex facere, sed ipsum, obcaecati sit. Neque culpa eveniet, minima maiores. Aspernatur sunt fugit rem, animi possimus.
+                a.destinos__button(href="#") Comprar
+                
+        .destinos__item
+            img.destinos__img(src="/res/destinos/destino4.jpg")
+            .destinos__item__description
+                h1.destinos__item__title LOREM IPSON DOLOR.
+                P.destinos__item_text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus cumque nesciunt rem doloribus ex facere, sed ipsum, obcaecati sit. Neque culpa eveniet, minima maiores. Aspernatur sunt fugit rem, animi possimus.
+                a.destinos__button(href="#") Comprar
+block opcion
+    .banner__opcion.opcionn
+        img.banner__opcion__img(src="/res/destinos/elegir.jpg" alt="mapa")
+        .banner__texto
+            h1.banner__opcion__title Elegi tu destino Nosotros te llevamos
+            P.banner__opcion__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus cumque nesciunt rem doloribus ex facere, sed ipsum, obcaecati sit. Neque culpa eveniet, minima maiores. Aspernatur sunt fugit rem, animi possimus.
+            a.banner__opcion__btn(href="#") Buscar Destino
